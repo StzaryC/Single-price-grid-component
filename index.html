@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+
+ :root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright_Yellow: hsl(71, 73%, 54%);
+  --Light_Cyan: #69C4C2;
+  --Light_Gray: hsl(204, 43%, 93%);
+  --Grayish_Blue: hsl(218, 22%, 67%);
+  }
+    body {
+      background: var(--Light_Gray);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      font-family: 'Karla';
+    }
+
+    main {
+      height: auto;
+      max-width: 620px;
+      min-width: 360px;
+      background: rgb(255, 255, 255);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      margin: 0px 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .join {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      padding: 0rem 2.5rem 2.5rem 2.5rem;
+    }
+
+    .join h1 {
+      color: var(--Cyan);
+    }
+
+    .join h2 {
+      color: var(--Bright_Yellow);
+      font-size: 18px;
+    }
+
+    .join p {
+      color: var(--Grayish_Blue);
+      line-height: 1.5rem;
+    }
+
+    .monthtly{
+      background: var(--Cyan);
+      grid-column-start: 1;
+      grid-column-end: 2;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .monthtly h2 {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.801);
+      margin: 0;
+    }
+
+    .monthtly p {
+      color: rgba(255, 255, 255, 0.8);
+      margin: 1.5rem 0rem;
+      font-size: 1rem;
+    }
+
+    .monthtly span {
+      font-size: 25px;
+      font-weight: bolder;
+    }
+
+    .monthtly button {
+      background: var(--Bright_Yellow);
+      color: #fff;
+      width: 100%;
+      height: 2.5rem;
+      margin-bottom: 0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .why_us {
+      background: var(--Light_Cyan);
+      color: #fff;
+      padding: 2rem;
+    }
+
+    .why_us h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .why_us p {
+      opacity: .6;
+      line-height: 1.2rem;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .monthtly, .why_us {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="join">
+      <h1>Join our community</h1>
+      <h2>30-day, hassle-free money back guarantee</h2>
+      <p>
+        Gain access to our full library of tutorials along with expert code reviews. 
+        Perfect for any developers who are serious about honing their skills.
+      </p>
+  
+    </div>
+    <div class="monthtly">
+      <h2>Monthly Subscription</h2>
+      <p><span>&dollar;29</span> per month <br> <br>
+        Full access for less than &dollar;1 a day</p>
+      <button>Sign Up</button>
+    </div>
+    <div class="why_us">
+      <h2>Why Us</h2>
+      <p>Tutorials by industry experts <br>
+        Peer &amp; expert code review <br>
+        Coding exercises <br>
+        Access to our GitHub repos <br>
+        Community forum <br>
+        Flashcard decks <br>
+        New videos every week</p>
+    </div>
+  </main>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/StzaryC/Single-price-grid-component.git">Gustavo Park</a>.
+    </p>
+  </footer>
+</body>
+</html>
